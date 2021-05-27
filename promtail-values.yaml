@@ -1,0 +1,2 @@
+config:
+  lokiAddress: http://local-loki-distributed-gateway/loki/api/v1/push
