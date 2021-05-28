@@ -49,10 +49,8 @@ loki:
         cache_location: /var/loki/cache
         cache_ttl: 168h
       aws:
-        endpoint: http://minio-service-internal:9000
-        bucketnames: grafana-loki
-        access_key_id: minio
-        secret_access_key: minio123
+        s3: http://minio:minio123@minio-service-internal.default.svc.cluster.local:9000/grafana-loki
+        s3forcepathstyle: true
       index_queries_cache_config:
         memcached:
           batch_size: 100
